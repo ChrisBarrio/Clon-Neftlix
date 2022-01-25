@@ -37,8 +37,13 @@ body {
 		font-weight: normal;
 		color: var(--rojo);
 		font-size: 2.5em;
+		transition: transform 0.8s;
+
 	}
 	
+	header .logotipo:hover{
+		transform: scale(1.2);
+	}
 	header nav a {
 		color: #AAA;
 		text-decoration: none;
@@ -50,10 +55,6 @@ body {
 		color: #FFF;
 	}
 	
-	header .logotipo:hover{
-		font-size: 41px;
-		transition: .6s;
-	}
 /* --------- Menu hamburguesa ----------------- */
 	
 #sidebar {
@@ -284,6 +285,9 @@ header.toggle-btn span {
 		display: none;
 	}
 	
+	#search{
+		display: none;
+	}
 		
 
 
@@ -367,10 +371,10 @@ header.toggle-btn span {
 	}
 	header .contenedor .logotipo{
 		font-size: 40px;;
+		transition: transform 0.8s;
 	}
 	header .contenedor .logotipo:hover{
-		font-size: 42px;
-		transition: 1s;
+		transform: scale(1.2);
 	}
 	header .toggle-btn span {
 		display: block;
@@ -379,13 +383,16 @@ header.toggle-btn span {
 		height: 30px;
 		text-align: center;
 		font-size: 18px;
-		color: #000000;
+		color: #3d3c3c;
 		border: 3px solid rgb(0, 0, 0);
 		border-radius: 5px;
 		margin-top: 18px;
+		transition: transform 0.8s;
+
 	}
 	header .toggle-btn span:hover{
 		color: rgb(61, 60, 60);
+		transform: scale(1.2);
 	}
 	#sidebar {
 		position: fixed;
@@ -411,4 +418,20 @@ header.toggle-btn span {
 		display: none;
 	}
 
+	#search{
+		display: flex;
+		justify-content: center;
+	}
+	#search .buscador{
+		width: 80%;
+	}
+	#search button{
+		width: 25px;
+		color: #fff;
+		background-color: var(--fondo);
+		border: none;
+		cursor: pointer;
+	}
 }
+
+
