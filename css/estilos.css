@@ -278,7 +278,7 @@ header.toggle-btn span {
 
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1680px){
 	
 	.toggle-btn span{
 		display: none;
